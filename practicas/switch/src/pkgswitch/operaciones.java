@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package pkg2clase3;
+package pkgswitch;
 
 /**
  *
  * @author Jose Miguel
  */
-class integer {
+public class operaciones {
     
 }
