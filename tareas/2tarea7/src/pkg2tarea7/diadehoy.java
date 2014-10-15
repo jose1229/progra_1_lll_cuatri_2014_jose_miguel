@@ -15,7 +15,8 @@ import java.util.Scanner;
 public class diadehoy {
 
     /**
-     * •Preguntar que día de la semana fue el día 1 del mes actual y reportar el día de la semana que es hoy
+     * •	Ingresar día de una fecha, reportar el día de la semana que le corresponde, 
+     * suponiendo que el día 1 de dicho mes fue lunes.
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -38,14 +39,14 @@ public class diadehoy {
         dia=in.nextInt();
         switch(dia%7)
         {
-            case 0: System.out.println("hoy es Domingo");break;
-            case 1: System.out.println("hoy es Lunes");break;
-            case 2: System.out.println("hoy es Martes");break;
-            case 3: System.out.println("hoy es Miercoles");break;
-            case 4: System.out.println("hoy es Jueves");break;
-            case 5: System.out.println("hoy es Viernes");break;
-            case 6: System.out.println("hoy es Sabado");break;
-            default: System.out.println("hoy es Numero fuera de rango");break;
+            case 0: System.out.println("Domingo");break;
+            case 1: System.out.println("Lunes");break;
+            case 2: System.out.println("Martes");break;
+            case 3: System.out.println("Miercoles");break;
+            case 4: System.out.println("Jueves");break;
+            case 5: System.out.println("Viernes");break;
+            case 6: System.out.println("Sabado");break;
+            default: System.out.println("Numero fuera de rango");break;
         }
     }
 
