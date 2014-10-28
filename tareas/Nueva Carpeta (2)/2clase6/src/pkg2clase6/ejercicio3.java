@@ -12,7 +12,8 @@ public class ejercicio3 {
     public String Rote(String palabra)
     {
         String temp="";
-        for (int i = palabra.length(); i<0; i--) {
+        
+        for (int i = palabra.length(); i>0; i--) {
             temp+=palabra.charAt(i-1);
         }
         return ""+temp;
@@ -102,9 +103,7 @@ public class ejercicio3 {
             }
             if (texto.charAt(i) == 'l') {
                 textoFinal += "L";
-            }
-            if (texto.charAt(i) == 'd') {
-                textoFinal += "";
+                      
             }
             if (texto.charAt(i) == 'd') {
                 textoFinal += "D";
