@@ -18,14 +18,9 @@ public class Main {
      *
      */
     public static void main(String[] args) {
-        int X=8;
-        int Y=2;
-        double N=3;
-        double M=5;
-        
-        operaciones Ooperaciones=new operaciones
-                Ooperaciones.suma();
-                
+          operaciones Ooperaciones=new operaciones();
+               Ooperaciones.suma();
+             
     }
     
 }

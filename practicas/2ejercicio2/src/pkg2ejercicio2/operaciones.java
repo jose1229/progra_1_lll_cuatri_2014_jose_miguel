@@ -10,11 +10,19 @@ package pkg2ejercicio2;
  *
  * @author Jose Miguel
  */
-public class operaciones {
-    
-    public void suma( ){
-      int suma= (N+M);
+public class operaciones {   
+    int X=8;
+        int Y=2;
+       double suma;
+       double N=8,M=6;
+    /**
+     *
+     * @param N
+     * @param M
+     */
+    Double suma() {
+         return this.M+N;   
+      
     }
-            
-    
+
 }

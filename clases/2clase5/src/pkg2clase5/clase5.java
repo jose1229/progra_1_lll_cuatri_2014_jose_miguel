@@ -97,7 +97,7 @@ public class clase5 {
                     case 6:
                         System.out.println("digite el valor del primer digito");
                         teclado = new Scanner(System.in);
-                        valor1 = Integer.parseInt(teclado.nextLine());
+
                         System.out.println("digite el valor del segundo digito");
                         teclado = new Scanner(System.in);
                         valor2 = Integer.parseInt(teclado.nextLine());
@@ -110,7 +110,7 @@ public class clase5 {
                         break;
 
                 }
-                System.out.println("desea continuar con otra oeracion S/N");
+                System.out.println("desea continuar con otra operacion S/N");
                 continuar = teclado.nextLine().charAt(0);
                 if ((continuar == 's') || (continuar == 'S')) {
                     validar = true;
