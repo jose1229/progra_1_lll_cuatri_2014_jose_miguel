@@ -71,7 +71,7 @@ public class Meses {
 
                 break;
             default:
-                System.out.println("estamos en el mes de: solo se permite ingresar un numero del 1 al 12., por favor ingrese un nuevo numero.");
+                System.out.println( "solo se permite ingresar un numero del 1 al 12., por favor ingrese un nuevo numero.");
 
         }
 
