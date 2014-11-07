@@ -21,31 +21,29 @@ public class Main {
 
         int[] arreglito = {8, 5, 2, 6, 0};
 
-       // for(int i=0; i<arreglito.length;i++)
+        // for(int i=0; i<arreglito.length;i++)
         //   System.out.print(arreglito[i]);
-        int[] temporal = oordenamientoSeleccion.ordenamientoseleccion(arreglito, "A");
+        int[] temporal = oordenamientoSeleccion.OrdenSeleccion(arreglito, "A");
         for (int i = 0; i < temporal.length; i++) {
             System.out.println(temporal[i]);
         }
-    
 
-    System.out.println();
+        System.out.println();
 
-    OrdenamientoBurbuja OordenamientoBurbuja = new OrdenamientoBurbuja();
-    temporal  = OordenamientoBurbuja.ordenamientoB(arreglito, "A");
-    for(int i = 0;i<temporal.length ;i++){
+        OrdenamientoBurbuja OordenamientoBurbuja = new OrdenamientoBurbuja();
+        temporal = OordenamientoBurbuja.ordenamientoB(arreglito, "A");
+        for (int i = 0; i < temporal.length; i++) {
             System.out.print(temporal[i]);
-    }
+        }
 
-    System.out.println ();
-    
-    OrdenamientoInsercion OordenamientoInsercion=new OrdenamientoInsercion();
-    temporal=OordenamientoInsercion.ordenarInsercion(arreglito,"A");
-    for (int i = 0; i <temporal.length; i++) {
-            System.out.println(temporal[i]);  
+        System.out.println();
 
-}     //
+        OrdenamientoInsercion OordenamientoInsercion = new OrdenamientoInsercion();
+        temporal = OordenamientoInsercion.ordenarInsercion(arreglito);
+        for (int i = 0; i < temporal.length; i++) {
+            System.out.println(temporal[i]);
+
+        }     //
         System.out.println();
     }
 }
-

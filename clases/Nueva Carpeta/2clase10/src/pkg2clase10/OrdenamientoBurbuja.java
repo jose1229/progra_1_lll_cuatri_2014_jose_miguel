@@ -9,7 +9,7 @@ package pkg2clase10;
  *
  * @author Jose Miguel
  */
-public class OrdenamientoBurbuja {
+public class OrdenamientoBurbuja {// metodo menos eficiente para ordenar codigo
 
     public int[] ordenamientoB(int arreglo[], String ordenamiento) {
         int indice;

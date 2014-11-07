@@ -10,19 +10,19 @@ package pkg2clase10;
  *
  * @author Jose Miguel
  */
-public class OrdenamientoInsercion {
+public class OrdenamientoInsercion {//metodo mas sencillo y eficiente
+    
   
-    public int[] ordenarInsercion(int array[], String ordenamiento){
-        
+    public int[] ordenarInsercion(int[] array){
         int aux;
-        
-        for (int i = 1; i < ordenamiento.length(); i++) {
-            aux = ordenamiento[i];
-            for (int j = i-1; j >=0 && ordenamiento[j]>aux; j--) {
-                ordenamiento[j+1]=ordenamiento[j];
-                ordenamiento[j]=aux;
+        for (int i = 1; i < array.length; i++) {
+            aux = array[i];
+            for (int j = i-1; j >=0 && array[j]>aux; j--) {
+                array[j+1]=array[j];
+                array[j]=aux;
             }
         }
-        return arreglo;
+        return array;
     }
+    
 }
