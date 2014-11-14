@@ -20,9 +20,7 @@ public class Quiz {
     public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
        
-    String Palabra="";
-        System.out.println("digite 5 palabras:");
-        Palabra=sc.nextLine();
+  
         
     }
     

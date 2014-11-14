@@ -19,25 +19,54 @@ import java.util.Scanner;
  */
 public class quiz1 {
 
-    public class PruebaVector1 {
+    public class Vector1 {
 
         private Scanner teclado;
-        private String[] palabras;
+        private String[] palabra;
 
         public void cargar() {
             teclado = new Scanner(System.in);
-            palabras = new String[5];
-            for (int f = 0; f < 5; f++) {
-                System.out.print("Ingrese 5 palabras");
-                palabras[f] = teclado.nextLine();
+            palabra = new String[5];
+            for (char f = 'a'; f < 'z'; f++) {
+                System.out.print("Ingrese 5 palabras divididas por una coma");
+                palabra[f] = teclado.nextLine();
             }
         }
 
-        public void imprimir() {
-            for (int f = 0; f < 5; f++) {
-                System.out.println(palabras[f]);
-            }
-        }
+        /*  public void imprimir() {
+         for (int f = 0; f < 5; f++) {
+         System.out.println(palabras[f]);
+         }*/
+        //}
+        public void split() {
 
+            String[] arraypalabra = palabra.Split(",");
+            for (int i = 0; i < arraypalabra.length; i++) {
+                System.out.print(arraypalabra[i] + " ");
+            }
+        
+        
+        
+
+       /* public String mayoromenor() 
+        {
+            String temporal = "";
+            String muestra = ""; 
+            String acum = "";
+
+            for (int i = 0; i < palabra.length(); i++) {
+                temporal += palabra.charAt(i);
+                acum = temporal;
+                if (temporal.toLowerCase().equals(acum)) {
+                    muestra += temporal.toUpperCase();
+                } else {
+                    if (temporal.toUpperCase().equals(acum)) {
+                        muestra += temporal.toLowerCase();
+                    }
+                }
+                temporal = "";
+            }
+            return muestra;
+        }*/
     }
 }
